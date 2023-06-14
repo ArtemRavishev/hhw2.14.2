@@ -162,6 +162,7 @@ public class IntrgerArrayListTest {
         );
     }
 
+
     @ParameterizedTest
     @MethodSource("argumentsForLastIndexOfTest")
     public void lastIndexOfTest(Integer str, int index) {
@@ -213,7 +214,7 @@ public class IntrgerArrayListTest {
         return Stream.of(
                 Arguments.of(new IntegerArrayList(1, 2, 3)),
                 Arguments.of(new IntegerArrayList(1, 2, 3, 4, 6)),
-                Arguments.of(new IntegerArrayList(0, 2, 3, 4, 5)),
+                Arguments.of(new IntegerArrayList(-1, 2, 3, 4, 5)),
                 Arguments.of(new IntegerArrayList(1, 2, 2, 4, 6))
         );
 
